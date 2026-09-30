@@ -1,0 +1,25 @@
+{
+  "northStar": "Live sports broadcast in a night studio",
+  "motion": {
+    "ease-out-expo": "cubic-bezier(0.16, 1, 0.3, 1)",
+    "wipe": "520ms clip-path inset reveal from the left, turn tarja and round title",
+    "rise": "420ms translateY(0.75rem) + opacity, revealed answer and explanation",
+    "shake": "360ms horizontal, wrong pick",
+    "standings-reorder": "spring stiffness 380 damping 34 (motion layout)",
+    "score-pop": "600ms scale 1.5 -> 1 with yellow -> ink color",
+    "reducedMotion": "all animations collapse to instant"
+  },
+  "shapes": {
+    "slant": "clip-path polygon(var(--slant) 0, 100% 0, calc(100% - var(--slant)) 100%, 0 100%)",
+    "slant-right": "clip-path polygon(0 0, 100% 0, calc(100% - var(--slant)) 100%, 0 100%)",
+    "slant-left": "clip-path polygon(var(--slant) 0, 100% 0, 100% 100%, 0 100%)"
+  },
+  "focus": "2px ring in live-yellow; choice rows use a 4px ring at 60%",
+  "breakpoints": { "sm": "640px", "md": "768px", "lg": "1024px (standings rail appears)" },
+  "rules": [
+    "One yellow primary action per screen",
+    "Team color always travels with letter mark and name",
+    "Standings visible during play",
+    "No gradients, glow, or colored side stripes"
+  ]
+}
